@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Node</title>
+    <link rel="icon" href="img/gato.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="h-left">
+            <h1>Crea a tu gato</h1>
+            <h4>5IV7 Moreno Noguerón Ximena</h4>
+            <h4>Sistemas Distribuidos</h4>
+        </div>
+
+        <div class="h-right">
+            <img src="img/gato.png" width="300" height="300">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="c-left">
+            <form name="formularioGato" method="post" action="agregarGato">
+                <label>Nombre de tu Gato: </label>
+                <input type="text" name="nombre" class="entry" id="nombre" required>
+                <br><br>
+                <label>Introduce la Edad: </label>
+                <input type="number" name="edad" class="entry" id="edad" min="0" max="15" required>
+                <br><br>
+                <label>Tipo de Gato: </label> &nbsp;&nbsp;&nbsp;
+                <select name="tipoGato" id="tipoGato">
+                    <option class="type-cat" id="1">Americano de Pelo Duro</option>
+                    <option class="type-cat" id="2">Azul Ruso</option>
+                    <option class="type-cat" id="3">Birmano</option>
+                    <option class="type-cat" id="4">Chinchilla</option>
+                    <option class="type-cat" id="5">Persa</option>
+                </select>
+                <br><br><br>
+                <input type="submit" class="btn" value="Enviar Datos">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" class="btn" value="Borrar Datos">
+    
+            </form>
+    
+        </div>
+
+        <div class="c-right">
+            <form name="formularioConsulta" method="get" action="consulta">
+                <input type="submit" class="btn" value="Consultar todos los gatos">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
