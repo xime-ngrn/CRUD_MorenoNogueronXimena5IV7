@@ -96,10 +96,6 @@ app.get('/consulta', (req, res) => {
     // se realiza la query
     con.query('select * from gato', (err, respuesta, filas) => {
         console.log(respuesta)
-        console.log(respuesta.length)
-        console.log(respuesta[0].nom_gato)
-        console.log(respuesta[0].edd_gato)
-        console.log(respuesta[0].id_type)
 
         let respuestaConsulta = ""
         for(let i=0; i<respuesta.length; i++){
