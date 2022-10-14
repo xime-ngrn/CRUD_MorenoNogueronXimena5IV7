@@ -1,8 +1,8 @@
-export const PORT = process.env.PORT || 8000
+export const PORT = 6628 || 8000
 
-export const DB_HOST = process.env.DB_HOST || 'localhost'
-export const DB_USER = process.env.DB_USER || 'root'
-export const DB_PASSWORD = process.env.DB_PASSWORD || 'n0mel0'
-export const DB_NAME = process.env.DB_NAME || 'gatos'
+export const DB_HOST = 'containers-us-west-78.railway.app' || 'localhost'
+export const DB_USER = 'root' || 'root'
+export const DB_PASSWORD = 'laRiK4euvsS9OnBToACv' || 'n0mel0'
+export const DB_NAME = 'railway' || 'gatos'
 
-export const DB_PORT = process.env.DB_PORT || 3306
+export const DB_PORT = 6628 || 3306
