@@ -5,6 +5,8 @@ import {PORT, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME} from './config.js
 
 let app = express() 
 
+let puerto  = PORT
+
 let con = mysql.createConnection({
     // datos para hacer la conexión
     user: DB_USER,
@@ -327,7 +329,7 @@ app.post('/editGato', (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
-    console.log("Servidor escuchando en el puerto ", PORT)
+app.listen(puerto, () => {
+    console.log("Servidor escuchando en el puerto ", puerto)
 })
 
